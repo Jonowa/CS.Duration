@@ -4,7 +4,7 @@ This class contains some helpful funktions to convert an ISO 8601 duration patte
 
 ## Eamples
 
-The basic usage is similar to `XmlConvert.ToTimeSpan(string s)`:
+The basic usage is similar to `System.Xml.XmlConvert.ToTimeSpan(string s)`:
 ```
 TimeSpan ts = Duration.Parse("PT2H30M");
 // ts = {02:30:00}
