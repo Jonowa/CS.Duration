@@ -5,7 +5,7 @@ This class contains some helpful funktions to convert an ISO 8601 duration patte
 ## Eamples
 
 The basic usage is similar to `System.Xml.XmlConvert.ToTimeSpan(string s)`:
-```
+```csharp
 TimeSpan ts = Duration.Parse("PT2H30M");
 // ts = {02:30:00}
 
@@ -14,7 +14,7 @@ TimeSpan ts = Duration.Parse("-PT2H30M");
 ```
 
 You can also add a pattern to a datetime value. Try this:
-```
+```csharp
 DateTime dt = new Duration(new DateTime(2022, 09, 07)).Add("PT2H30M");
 // dt = {2022-09-07 02:30:00}
 
