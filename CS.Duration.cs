@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Xml;
 
 /// <summary>
 /// This class contains some helpful funktions to convert
 /// an ISO 8601 duration pattern into a timespan. Optionally
 /// the timespan can added to a date value.
 /// </summary>
-public class Duration : XmlConvert
+public class Duration
 {
     /// <summary>
     /// Date value of this instance.
@@ -50,6 +49,6 @@ public class Duration : XmlConvert
     /// <returns>TimeSpan object</returns>
     public static TimeSpan Parse(string pattern)
     {
-        return ToTimeSpan(pattern);
+        return System.Xml.XmlConvert.ToTimeSpan(pattern);
     }
 }
